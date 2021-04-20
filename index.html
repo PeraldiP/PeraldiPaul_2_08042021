@@ -9,14 +9,14 @@
     <body>
         <div id="container">
             <header>
-                <div><img id="logo" src="images/logo/Reservia.svg"></div>
+                <div id="logo"><img src="images/logo/Reservia.svg"></div>
                 <nav>
                     <ul>
-                        <li><a href="#hebergements">Hébergements</a></li>
-                        <li><a href="#activites">Activités</a></li>
+                        <li><a href="#hebergement">Hébergements</a></li>
+                        <li><a href="#activite">Activités</a></li>
                     </ul>
-                    <a id="subscripte" href="#">S'inscrire</a>
                 </nav>
+                <a id="inscription" href="#">S'inscrire</a>
             </header>
 
             <main>
@@ -26,25 +26,28 @@
                     <form method=“post“ name=“traitement.php“>
                         <i id="logo_geo" class="fas fa-map-marker-alt"></i>
                         <input id="zone_texte" type=“text“ name=“rechercheVille“ id=“rechercheVille“ size="20" value="Marseille,France"/>
-                        <input id="bouton" type="submit" value="Rechercher" />
+                        <button id="bouton" type="submit">
+                            <span id="recherche">Rechercher</span>
+                            <i id="loupe" class="fas fa-search"></i>
+                        </button>
                    </form>   
-                    <div id="filtres">
+                    <div id="filtre">
                         <h1>Filtres</h1>
-                        <div class="choix_filtre"><i class="fas fa-money-bill-wave"></i><p>Éconimque</p></div>
+                        <div class="choix_filtre"><i class="fas fa-money-bill-wave"></i><p>Éconimique</p></div>
                         <div class="choix_filtre"><i class="fas fa-child"></i><p>Familial</p></div>
-                        <div class="choix_filtre"><i class="fas fa-heart"></i><p>Romanqtique</p></div>
+                        <div class="choix_filtre"><i class="fas fa-heart"></i><p>Romantique</p></div>
                         <div class="choix_filtre"><i class="fas fa-dog"></i><p>Animaux autorisés</p></div>
                     </div>
-                    <div id="informations">
+                    <div id="information">
                         <i class="fas fa-info"></i>
                         <p>Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>   
                 </div>
         
-                <section id="locations">
+                <section id="location">
                    <article>
-                       <h1 id="hebergements">Hébergements à Marseille</h1>
-                       <div id="liste_hebergements">
+                       <h1 id="hebergement">Hébergements à Marseille</h1>
+                       <div id="liste_hebergement">
                             <a class="choix_hebergement"href="#">
                                 <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/>
                                 <div>
@@ -111,7 +114,7 @@
                                 </div>
                             </a>    
                         </div>
-                        <a id="plus" href="#">Afficher plus</a>
+                        <a href="#">Afficher plus</a>
                    </article>
         
                    <aside>
@@ -152,32 +155,30 @@
                                         <span class="full"><i class="fas fa-star"></i><i class="fas fa-star"></i><i  class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="empty"><i class="fas fa-star"></i></span>
                                     </div>
                                 </div>     
-                            </a>   
-
-                         
+                            </a>            
                         </div>
                     </aside>
                 </section>
         
                 <section id="activity">
-                   <h1 id="activites">Activités à Marseille</h1>
-                   <div id="liste_activites">
-                        <div class="content1">
+                   <h1 id="activite">Activités à Marseille</h1>
+                   <div id="liste_activite">
+                        <div class="boxA">
                             <a href="#">
                                 <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/>
                                 <h2>Vieux Port</h2>
                             </a>    
                         </div>
                         
-                        <div class="content2">
-                            <div class="photo1">
+                        <div class="boxB">
+                            <div class="content1">
                                 <a href="#">
                                     <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"/>
                                     <h2>Fort de Pomègues</h2>
                                 </a>    
                             </div>
                 
-                            <div class="photo2">
+                            <div class="content2">
                                 <a href="#">
                                     <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"/>
                                     <h2>Îles du Frioul</h2>
@@ -185,22 +186,22 @@
                             </div>    
                         </div>
         
-                        <div class="content1">
+                        <div class="boxA">
                             <a href="#">
                                 <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"/>
                                 <h2>Parc National des Calanques</h2>
                             </a>    
                         </div>
 
-                        <div class="content2">
-                            <div class="photo2">
+                        <div class="boxB">
+                            <div class="content2">
                                 <a href="#">
                                     <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"/>
                                     <h2>Notre-Dame-de-la-Garde</h2>
                                 </a>    
                             </div>
                 
-                            <div class="photo1">
+                            <div class="content1">
                                 <a href="#">
                                     <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"/>
                                     <h2>Parc Longchamp</h2>
@@ -236,7 +237,7 @@
                          <li><a href="#">Nous contacter</a></li>
                      </ul>
                  </div>
-            </footer>   
+            </footer>  
         </div>
        
     </body>
